@@ -174,11 +174,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-Pycharm Sever on linux" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/05/24/Pycharm Sever on linux/" class="article-date">
-  	<time datetime="2018-05-24T14:21:40.631Z" itemprop="datePublished">2018-05-24</time>
+      <a href="/2018/05/24/hello-world/" class="article-date">
+  	<time datetime="2018-05-24T14:28:27.619Z" itemprop="datePublished">2018-05-24</time>
 </a>
     </div>
   
@@ -187,24 +187,21 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/24/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <p>进入放文件的目录，执行以下命令：</p>
-<pre><code>sudo +x ./IntelliJIDEALicenseServer_linux_amd64
-</code></pre><p>创建并编辑服务文件，让其开机启动：</p>
-<pre><code>sudo nano /etc/systemd/system/interllij-license.service
-</code></pre><p>填入以下信息：</p>
-<pre><code>[Unit]
-Description=Intellij license server
-[Service]
-ExecStart=/var/local/software/IntelliJIDEALicenseServer_linux_amd64 -p 1017 
-Restart=always
-RestartSec=10
-SyslogIdentifier=intellij-license-log
-</code></pre><p>保存退出<br>执行以下命令设置服务开机启动</p>
-<pre><code>sudo systemctl enable interllij-license
-sudo systemctl start intellij-license
-</code></pre><p>此时可通过<a href="http://服务器ip:1017进行访问" target="_blank" rel="noopener">http://服务器ip:1017进行访问</a></p>
+        <p>Welcome to My Blog.</p>
+<h3 id="这是我的第一篇博文，先占个位置吧"><a href="#这是我的第一篇博文，先占个位置吧" class="headerlink" title="这是我的第一篇博文，先占个位置吧"></a>这是我的第一篇博文，先占个位置吧</h3><h3 id="以后想到什么可以写的，会不定期更新"><a href="#以后想到什么可以写的，会不定期更新" class="headerlink" title="以后想到什么可以写的，会不定期更新"></a>以后想到什么可以写的，会不定期更新</h3><p><strong>Mark! Friday, 02. February 2018 05:59PM </strong></p>
 
       
     </div>
@@ -231,11 +228,11 @@ sudo systemctl start intellij-license
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Pycharm Sever on linux" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/02/02/hello-world/" class="article-date">
-  	<time datetime="2018-02-02T13:31:15.952Z" itemprop="datePublished">2018-02-02</time>
+      <a href="/2018/05/24/Pycharm Sever on linux/" class="article-date">
+  	<time datetime="2018-05-24T14:27:42.793Z" itemprop="datePublished">2018-05-24</time>
 </a>
     </div>
   
@@ -248,7 +245,7 @@ sudo systemctl start intellij-license
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/02/hello-world/">Hello World</a>
+      <a class="article-title" href="/2018/05/24/Pycharm Sever on linux/">搭建intellij-licenseServer</a>
     </h1>
   
 
@@ -257,13 +254,22 @@ sudo systemctl start intellij-license
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to My Blog.</p>
-<h3 id="这是我的第一篇博文，先占个位置吧"><a href="#这是我的第一篇博文，先占个位置吧" class="headerlink" title="这是我的第一篇博文，先占个位置吧"></a>这是我的第一篇博文，先占个位置吧</h3><h3 id="以后想到什么可以写的，会不定期更新"><a href="#以后想到什么可以写的，会不定期更新" class="headerlink" title="以后想到什么可以写的，会不定期更新"></a>以后想到什么可以写的，会不定期更新</h3><p><strong>Mark! Friday, 02. February 2018 05:59PM </strong></p>
-<ul>
-<li style="list-style: none"><input type="checkbox" checked> 做一个自己的博客</li>
-<li style="list-style: none"><input type="checkbox"> SIP</li>
-<li style="list-style: none"><input type="checkbox"> TCP/IP</li>
-</ul>
+        <p>进入放文件的目录，执行以下命令：</p>
+<pre><code>sudo +x ./IntelliJIDEALicenseServer_linux_amd64
+</code></pre><p>创建并编辑服务文件，让其开机启动：</p>
+<pre><code>sudo nano /etc/systemd/system/interllij-license.service
+</code></pre><p>填入以下信息：</p>
+<pre><code>[Unit]
+Description=Intellij license server
+[Service]
+ExecStart=/var/local/software/IntelliJIDEALicenseServer_linux_amd64 -p 1017 
+Restart=always
+RestartSec=10
+SyslogIdentifier=intellij-license-log
+</code></pre><p>保存退出<br>执行以下命令设置服务开机启动</p>
+<pre><code>sudo systemctl enable interllij-license
+sudo systemctl start intellij-license
+</code></pre><p>此时可通过<a href="http://服务器ip:1017进行访问" target="_blank" rel="noopener">http://服务器ip:1017进行访问</a></p>
 
       
     </div>
